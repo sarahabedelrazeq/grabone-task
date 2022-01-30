@@ -12,7 +12,7 @@ function PrimaryNav() {
                         GrabOne
                     </a>
                 </div>
-                <DropdownList title={[<i key={"sarah"} className="fas fa-map-marker-alt"></i>, "Auckland"]} items={primaryDropList}/>
+                <DropdownList title={[<i className="fas fa-map-marker-alt"></i>, "Auckland"]} items={primaryDropList}/>
                 <div className='phone_hed'>
                     <LinksBar items={primaryLinks}/> 
                 </div> 
