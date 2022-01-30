@@ -43,9 +43,9 @@ function Footer(props) {
         <div className='phone_hed'>
           <span>Newsletter Signup</span>
           <span>Sign up for our daily emails and we'll send you all the best deals, tailored for you.</span>
-          <div class="email-subscription__input-container">
-            <i class="far fa-envelope"></i>
-            <input name="register_email" type="email" value="" placeholder="Enter email address" class="email-subscription__input" />
+          <div className="email-subscription__input-container">
+            <i className="far fa-envelope"></i>
+            <input  placeholder="Enter email address" className="email-subscription__input" />
             <button className='btn' type="submit" value="Sign Up" >Subscribe</button>
           </div>
           

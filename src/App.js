@@ -46,15 +46,17 @@ function App() {
        </div>
      </div>
      {discoverShow()}
+
      <div key={1} id="search" className='over_slide'>
-        <Search />
+       <Search />
       </div>
+
       <div key={2} id="categories" className='over_slide'>
-        <PhoneList key={"sarah1"} title="Browse Categories" items={categories} />
+        <PhoneList key={"111"} title="Browse Categories" items={categories} />
       </div>
-      <div key={3} id="cart" className='over_slide'>
-        
-      </div>
+
+      <div key={3} id="cart" className='over_slide'></div>
+
       <div key={4} id="account" className='over_slide'>
         
         <SideBar items={[{name: "My Purchases", icon: "fas fa-box"},
