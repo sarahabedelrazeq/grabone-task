@@ -4,7 +4,7 @@ function DropdownList(props) {
     const [click, setClick] = useState(false)
     const itemsMap = props.items.map((x,i) => {
         return (
-            <li key={i.toString()}> 
+            <li key={i}> 
                 <a href={x.url}>
                     {x.value}
                 </a> 
@@ -23,7 +23,7 @@ function DropdownList(props) {
     return (
         <div className='dropdown_list'>
             <a onClick={eventsHandler} className='dropdown_btn'>{props.title}</a>
-            <ul className='overlay' style={{display :click ? "block" : "none"}}>
+            <ul key={111} className='overlay' style={{display :click ? "block" : "none"}}>
                 {itemsMap}
             </ul>
         </div>

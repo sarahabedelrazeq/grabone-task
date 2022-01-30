@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function DropdownListOfList(props) {
+function PhoneList(props) {
     const [activelist, setActivelist] = useState(-1);
     const [activeSub, setActiveSub] = useState(-1);
     const [level, setlevel] = useState(1);
@@ -82,4 +82,4 @@ function DropdownListOfList(props) {
     }
 }
 
-export default DropdownListOfList;
+export default PhoneList;
