@@ -486,14 +486,37 @@ a, a *{
   height: 38px;
   box-shadow: 0 0 8px 0 rgb(79 88 100 / 10%);
   border: 1px solid #dce3ed;
+  
   border-radius: 5px;
+  margin: 0 !important;
   background-color: transparent;
+}
+
+#search {
+  padding: 15px;
+  width: calc(100% - 30px);
+}
+
+#search .search input{
+  width: calc(100% - 57px) !important;
+  display: block;
+}
+
+#search .search {
+  position: relative;
 }
 
 .search i{
   margin-right: -33px;
   margin-top: 7px;
   vertical-align: middle;
+}
+
+#search i{
+  position: absolute;
+  margin: 0 !important;
+  top: 15px;
+  left: 7px;
 }
 
 .phone_bar{
