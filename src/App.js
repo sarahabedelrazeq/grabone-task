@@ -6,8 +6,8 @@ import PhoneBar from './components/PhoneBar';
 import Search from './components/Search';
 import {discover, categories} from './data/data';
 import PhoneList from './components/PhoneList';
-import LinksBar from './components/LinksBar';
-import {primaryLinks, primaryDropList} from './data/data';
+import AdCarde from './components/AdCard';
+import Footer from './components/Footer';
 
 function App() {
   window.onclick = function(event) {
@@ -40,7 +40,10 @@ function App() {
        <div className='phone_hed'>
          <SideBar items={discover} title="Discover" /> 
        </div>
-       <div></div>
+       <div className='adds_big'>
+       <AdCarde ad = {{id: 1,title: "Hair Regrowth Treatment incl.Scalp Massage ",text: "<p> 90-Minute Boost Hair Regrowth Treatment incl. Relaxing Scalp Massage </p>",vendor: "G.M HairLimited",location: "Auckland Central",price: 280,oferprise: 168,image: "08d263b51d5d81f1675b38f2461a623d585a5a58.jpg",bought: 0}} />
+       <AdCarde ad = {{id: 2,title: "Hair Regrowth Treatment incl.Scalp Massage ",text: "<p> 90-Minute Boost Hair Regrowth Treatment incl. Relaxing Scalp Massage </p>",vendor: "G.M HairLimited",location: "Auckland Central",price: 280,oferprise: 168,image: "08d263b51d5d81f1675b38f2461a623d585a5a58.jpg",bought: 0}} />
+       </div>
      </div>
      {discoverShow()}
      <div key={1} id="search" className='over_slide'>
@@ -70,60 +73,7 @@ function App() {
          {text: "account", icon:'far fa-user'}
     ]} />
       </div>
-
-    <footer>
-      <div className='top'>
-        <div>
-          <span><b>Follow us on</b></span>
-          <LinksBar items={[
-            {icon: 'fab fa-facebook-f'},
-            {icon: 'fab fa-twitter'},
-            {icon: 'fab fa-youtube'},
-            {icon: 'fab fa-instagram'},
-          ]}/> 
-          <span><b>Get app exclusive deals</b></span>
-          <a className='btn'>Download our App</a>
-        </div>
-
-        <div>
-          <span>GrabOne</span>
-          <a>Contact Us</a>
-          <a>About Us</a>
-          <a>Terms & Returns</a>
-          <a>Blog</a>
-          <a>Gift Cards</a>
-        </div>
-
-        <div>
-          <span>My Account</span>
-          <a>My Account</a>
-          <a>My Cart</a>
-          <a>My Coupons</a>
-          <a>FAQ</a>
-        </div>
-
-        <div>
-          <span>Merchants</span>
-          <a>Run a Deal</a>
-          <a>Merchant Centre</a>
-        </div>
-
-        <div className='phone_hed'>
-          <span>Newsletter Signup</span>
-          <span>Sign up for our daily emails and we'll send you all the best deals, tailored for you.</span>
-          <div class="email-subscription__input-container">
-            <i class="far fa-envelope"></i>
-            <input name="register_email" type="email" value="" placeholder="Enter email address" class="email-subscription__input" />
-            <button className='btn' type="submit" value="Sign Up" >Subscribe</button>
-          </div>
-          
-        </div>
-      </div>
-
-      <div className='bottom'> 
-
-      </div>
-    </footer>
+      <Footer />
     </div>
   );
 }

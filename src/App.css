@@ -567,7 +567,37 @@ footer .top > div{
   max-width: 400px;
   padding-top: 30px;
 }
+
+.adds_big{
+  display: flex;
+  width: 100%;
+  padding-left: 15px;
+}
+
+.adds_big > div{
+  width: 100%;
+  padding: 10px;
+} 
+
+.adds_big .title{
+  font-size: 20px;
+}
+
 @media screen and (max-width: 1160px) {
+
+  .adds_big{
+    display: flex;
+    width: 100%;
+    padding-left: 0;
+    justify-content: space-between;
+  }
+  .adds_big > div{
+    width: calc(50% - 5px);
+    padding: 0;
+  } 
+  .adds_big .title{
+    font-size: 20px;
+  }
 
   footer .top > div{
     max-width: 400px;
@@ -687,6 +717,8 @@ footer .top > div{
     font-weight: 300;
   }
 }
+
+
 
 @media screen and (max-width: 650px) {
   .ads_row {
