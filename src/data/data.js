@@ -2,7 +2,7 @@ export const ads = {
     "Featured Auckland deals": [{
             id: 1,
             title: "Hair Regrowth Treatment incl.Scalp Massage ",
-            text: "<p> 90-Minute Boost Hair Regrowth Treatment incl. Relaxing Scalp Massage </p>",
+            text: " 90-Minute Boost Hair Regrowth Treatment incl. Relaxing Scalp Massage ",
             vendor: "G.M HairLimited",
             location: "Auckland Central",
             price: 280,

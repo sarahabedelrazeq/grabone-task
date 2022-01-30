@@ -747,6 +747,17 @@ footer .top > div{
   .ads_row {
     grid-template-columns: 100%;
   }
+
+  .adds_big{
+    display: block;
+    width: 100%;
+    padding-left: 0;
+  }
+  
+  .adds_big > div{
+    width: 100%;
+    padding: 0;
+  } 
   
 }
 

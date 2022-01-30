@@ -41,8 +41,8 @@ function App() {
          <SideBar items={discover} title="Discover" /> 
        </div>
        <div className='adds_big'>
-       <AdCarde ad = {{id: 1,title: "Hair Regrowth Treatment incl.Scalp Massage ",text: "<p> 90-Minute Boost Hair Regrowth Treatment incl. Relaxing Scalp Massage </p>",vendor: "G.M HairLimited",location: "Auckland Central",price: 280,oferprise: 168,image: "08d263b51d5d81f1675b38f2461a623d585a5a58.jpg",bought: 0}} />
-       <AdCarde ad = {{id: 2,title: "Hair Regrowth Treatment incl.Scalp Massage ",text: "<p> 90-Minute Boost Hair Regrowth Treatment incl. Relaxing Scalp Massage </p>",vendor: "G.M HairLimited",location: "Auckland Central",price: 280,oferprise: 168,image: "08d263b51d5d81f1675b38f2461a623d585a5a58.jpg",bought: 0}} />
+       <AdCarde ad = {{id: 1,title: "Hair Regrowth Treatment incl.Scalp Massage ",text: " 90-Minute Boost Hair Regrowth Treatment incl. Relaxing Scalp Massage ",vendor: "G.M HairLimited",location: "Auckland Central",price: 280,oferprise: 168,image: "08d263b51d5d81f1675b38f2461a623d585a5a58.jpg",bought: 0}} />
+       <AdCarde ad = {{id: 2,title: "Hair Regrowth Treatment incl.Scalp Massage ",text: " 90-Minute Boost Hair Regrowth Treatment incl. Relaxing Scalp Massage ",vendor: "G.M HairLimited",location: "Auckland Central",price: 280,oferprise: 168,image: "08d263b51d5d81f1675b38f2461a623d585a5a58.jpg",bought: 0}} />
        </div>
      </div>
      {discoverShow()}
