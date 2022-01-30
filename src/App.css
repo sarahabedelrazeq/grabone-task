@@ -198,16 +198,18 @@ a, a *{
   display: flex;
 }
 
-.primary_nav .links_bar > ul li {
+ .links_bar > ul li {
   padding: 0 15px;
   height: 40px;
   max-height: 40px;
+  align-items: center;
+  display: flex;
   min-height: 40px;
 }
 
-.primary_nav .links_bar i {
-  width: 25px;
-  height: 25px;
+ .links_bar i {
+  font-size: 25px;
+  margin-right: 10px;
 }
 
 .primary_nav>.content>.logo ,
@@ -508,7 +510,69 @@ a, a *{
   display: none;
 }
 
+footer{
+  padding: 0 15px;
+  background-color: #fff;
+  padding-bottom: 60px;
+  border-top: 1px solid #eaf1f5;
+}
+
+footer .top > div:first-child  i{
+  background-color: #4f5864;
+  color: white !important;
+  border-radius: 50%;
+  font-size: 18px;
+  padding: 8px !important;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  display: block;
+}
+
+footer .links_bar li{
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+footer .top{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer a,footer span{
+  display: block;
+  font-size: 16px;
+}
+footer a:hover{
+  color: #1acbff;
+}
+footer .top > div span:first-child{
+  font-weight: bold;
+  font-size: 14px ;
+  margin-bottom: 20px;
+  
+}
+
+footer .top > div > .btn{
+  width:130px;
+  height: 20px;
+  padding: 16px 40px;
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 20px !important;
+}
+
+footer .top > div{
+  max-width: 400px;
+  padding-top: 30px;
+}
 @media screen and (max-width: 1160px) {
+
+  footer .top > div{
+    max-width: 400px;
+    padding-top: 30px;
+  }
 
   .phone_list .main_over{
     overflow-y: hidden;
@@ -629,4 +693,42 @@ a, a *{
     grid-template-columns: 100%;
   }
   
+}
+
+input.email-subscription__input {
+    height: 46px;
+    font-size: 15px;
+    color: #4f5864;
+    padding: 0 0 0 12px;
+    padding-left: 45px;
+    box-shadow: 0 0 8px 0 rgb(79 88 100 / 10%);
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #dce3ed;
+    width: 65%;
+}
+
+.email-subscription__input-container{
+  position: relative;
+}
+  .email-subscription__input-container {
+    margin-top: 20px;
+  }
+    .btn{
+    height: 48px;
+    box-shadow: 0 0 8px 0 rgb(1 178 238 / 50%);
+    border: none;
+    background: #01b2ee;
+    border-radius: 0 5px 5px 0;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    line-height: normal;
+    display: inline-block;
+    color: #fff;
+  }
+    .email-subscription__input-container i{
+  position: absolute;
+  left: calc(11px);
+  top: 10px;
 }

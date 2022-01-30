@@ -7,7 +7,12 @@ function LinksBar(props) {
                 (x.icon || x.value)?
                 <li key={i}>
                     <a href={x.url}> 
-                        <i className={x.icon}></i> {x.value}
+                        <div>
+                        <i className={x.icon}></i>
+                        </div> 
+                        <div>
+                        {x.value}
+                        </div>
                     </a>
                 </li> 
                 :x
