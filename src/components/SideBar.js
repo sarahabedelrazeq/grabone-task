@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
-function DropdownList(props) {
+function SideBar(props) {
     const itemsMap = props.items.map((x, i) => {
         if(x.num){
-            return (
+            return ( 
                 <li key={i}>
                     <a href='#'>
                         <span>{x.name}</span>
@@ -34,4 +34,4 @@ function DropdownList(props) {
     );
 }
 
-export default DropdownList;
+export default SideBar;
