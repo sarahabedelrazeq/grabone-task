@@ -282,27 +282,27 @@ export const ads = {
 
 export const primaryLinks = [{
         id: 1,
-        type: "icon",
         url: "url1",
-        value: "far fa-heart"
+        value: "",
+        icon: "far fa-heart"
     },
     {
         id: 2,
-        type: "icon",
         url: "#",
-        value: "fas fa-shopping-cart"
+        value: "",
+        icon: "fas fa-shopping-cart"
     },
     {
         id: 3,
-        type: "icon",
         url: "#",
-        value: "far fa-user"
+        value: "",
+        icon: "far fa-user"
     },
     {
         id: 4,
-        type: "icon",
         url: "#",
-        value: "far fa-envelope"
+        value: "Subscribe",
+        icon: "far fa-envelope"
     },
 ];
 
